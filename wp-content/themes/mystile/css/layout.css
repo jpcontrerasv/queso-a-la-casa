@@ -297,7 +297,7 @@ INDEX
   }
   .homepage-banner {
     position: relative;
-    max-width: 95.949em;
+    max-width: 75.949em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3.631em;
@@ -574,8 +574,6 @@ INDEX
     content: "S";
   }
   #header {
-    padding-bottom: 1.618em;
-    padding-top: 3.631em;
   }
   #header:after {
     content: "\0020";
