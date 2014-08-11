@@ -359,7 +359,6 @@ INDEX
     right: 0;
     z-index: 50;
     bottom: 0;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGAwBuKzQAwGjDAGNgGwSgwVAFCGAgUGpiTrAAAAAElFTkSuQmCC);
   }
   .home #content.with-banner {
     border-top: 4px double #e8e4e3;

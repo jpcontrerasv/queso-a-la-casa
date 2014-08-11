@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.box {
+	display:block;
+	height:auto;
+	overflow:hidden;
+}
+.fleft {
+	float:left;
+}
+.fright {
+	float:right;
+}
+.fcenter {
+	margin:0 auto;
+}
+.fwidth {
+	width:100%;
+}
+*, p, a {
+	margin:0;
+	padding:0;
+}
+a {
+	text-decoration:none;
+	outline:none;
+}
+.ocultar {
+	display:none;
+	visibility:hidden;
+}
+.mostrar {
+	display:block;
+	visibility:visible;
+}
+body {
+	padding:0;
+	margin:0;
+	background:#ffc640;
+}
+#header {
+	background:#FFF;
+}
+
+#img {
+	background:#ffc640;
+}
+#img img{
+	max-width:100%;
+}
+
+#txt {
+	margin:20px 0;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
