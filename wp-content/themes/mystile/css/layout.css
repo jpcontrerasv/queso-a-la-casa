@@ -41,7 +41,7 @@ INDEX
     -webkit-box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
   }
   body {
-    padding: 0 3.631em;
+    padding: 50px 3.631em;
   }
   table {
     font-size: 1em !important;
