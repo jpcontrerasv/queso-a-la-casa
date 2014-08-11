@@ -1,0 +1,30 @@
+#wopar
+
+#:class-wc-email-payment-reminder.php
+msgid "Payment reminder"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "This is an email sent to the customer who finished their order by didnt payed it."
+msgstr ""
+
+#:class-wc-email-payment-reminder.php class-wc-email-payment-reminder.php
+msgid "Your order is still pending"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "You put an order on {order_date}, you indicate youll pay it by {order_payment_method}, but we are still waiting for your payment !"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Email content"
+msgstr ""
+
+#:class-wc-email-payment-reminder.php
+msgid "Content of the message sent to customer. You may put those variables : {order_date}, {order_number}, {order_payment_method}"
+msgstr ""
+
+#:class.admin.php
+msgid "Send reminder"
+msgstr ""
+

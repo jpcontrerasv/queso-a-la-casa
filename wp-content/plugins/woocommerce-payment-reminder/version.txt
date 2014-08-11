@@ -1,0 +1,8 @@
+Reminder for WooCommerce Unpaid Orders
+---------------------------------------
+
+version 1.0 :
+- New email "Payment reminder". To configure : WooCommerce > Settings > Emails
+- New action button in orders panel to send the email
+- New "email resend action" in the order detail to send the email 
+- Compatible with Wordpress 3.8.1 and WooCommerce 2.0 or 2.1 

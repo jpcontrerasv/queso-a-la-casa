@@ -1,0 +1,321 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>WooCommerce Table Rate Shipping</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Erica Dion">
+	<meta name="copyright" content="Erica Dion">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2013-11-01T00:00:00+01:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='easeInOutBack';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FCF8EB;color:#343434;}
+		::-moz-selection{background:#8FA760;color:#FFFFFF;}
+		::selection{background:#8FA760;color:#FFFFFF;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_2.png);}
+		a{color:#8FA760;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #8FA760, #708840);
+			  background-image: -ms-linear-gradient(top, #8FA760, #708840);
+			  background-image: -webkit-gradient(linear, 0 0, 0 8FA760%, from(#342D2B), to(#708840));
+			  background-image: -webkit-linear-gradient(top, #8FA760, #708840);
+			  background-image: -o-linear-gradient(top, #8FA760, #708840);
+			  background-image: linear-gradient(top, #8FA760, #708840);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8FA760', endColorstr='#708840', GradientType=0);
+			  border-color: #708840 #708840 #bfbfbf;
+			  color:#FCF8EB;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #8FA760 #8FA760 #bfbfbf;
+		  background-color: #708840;
+		}
+		hr{border-top:1px solid #342D2B;border-bottom:1px solid #FCF8EB;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#342D2B;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #342D2B;-moz-text-shadow:1px 1px 0px #342D2B;text-shadow:1px 1px 0px #342D2B;}
+		#documenter_sidebar ul{border-top:1px solid #342D2B;}
+		#documenter_sidebar ul a{border-top:1px solid #342D2B;border-bottom:1px solid #342D2B;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#8FA760;color:#FFFFFF;border-top:1px solid #8FA760;}
+		#documenter_sidebar ul a.current{background:#8FA760;color:#FFFFFF;border-top:1px solid #8FA760;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-woocommerce-table-rate-shipping">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#about_this_plugin" title="About this Plugin">About this Plugin</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li><a href="#settings_table_rates" title="Settings: Table Rates">Settings: Table Rates</a></li>
+			<li><a href="#settings_zones" title="Settings: Zones">Settings: Zones</a></li>
+			<li><a href="#quick_tips" title="Quick Tips">Quick Tips</a></li>
+			<li><a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Erica Dion 2013<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>WooCommerce Table Rate Shipping</h1>
+	
+	<div id="documenter_buttons">
+		<a href="http://bolderelements.net/support/board/table-rate-shipping-for-woocommerce/" class="btn btn-primary btn-large">Get Support!</a> <a href="http://on.fb.me/1iAS7rb" class="btn btn-large">Tips on facebook</a> 
+	</div>
+	<hr>
+	<ul>
+	<li>created: 01/01/2013</li>
+	<li>latest update: 11/01/2013</li>
+	<li>by: Erica Dion</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#101;&#114;&#105;&#99;&#97;&#64;&#98;&#111;&#108;&#100;&#101;&#114;&#101;&#108;&#101;&#109;&#101;&#110;&#116;&#115;&#46;&#110;&#101;&#116;">&#101;&#114;&#105;&#99;&#97;&#64;&#98;&#111;&#108;&#100;&#101;&#114;&#101;&#108;&#101;&#109;&#101;&#110;&#116;&#115;&#46;&#110;&#101;&#116;</a></li>
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="about_this_plugin">
+	<div class="page-header"><h3>About this Plugin</h3><hr class="notop"></div>
+<p>
+	Table Rate shipping allows the administrator to add a series of conditions to determine the shipping price for a customer&#39;s order. These rules can be set on a per order, per item, or per class basis.</p>
+<p>
+	The WooCommerce Table Rate Shipping plugin works alongside your WooCommerce store by adding a new shipping method directly to your WooCommerce settings. The familiar layout and easy to use options will make it simple to setup and use in your store.</p>
+<p>
+	This plugin is designed to work with the open-source WooCommerce plugin.</p>
+<p>
+	Minimum Requirements:</p>
+<ul>
+	<li>
+		PHP 4.3</li>
+	<li>
+		WordPress 3.3</li>
+	<li>
+		WooCommerce 1.6</li>
+	<li>
+		Javscript / jQuery</li>
+</ul>
+</section>
+<section id="installation">
+	<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+<p>
+	This plugin installs the same as any other WordPress plugin. For detailed instructions, please review the two options below:</p>
+<h5>
+	Install by ZIP File</h5>
+<ol>
+	<li>
+		From your WordPress dashboard, choose &#39;Add New&#39; under the &#39;Plugins&#39; category</li>
+	<li>
+		Select &#39;Upload&#39; from the set of links at the top of the page (the second link)</li>
+	<li>
+		From here, browse for the zip file included in your plugin purchase titled &#39;woocommerce-table-rate-shipping.zip&#39; and click the &#39;Install Now&#39; button</li>
+	<li>
+		Once installation is complete, activate the plugin to enable its features.</li>
+</ol>
+<h5>
+	Install by FTP</h5>
+<ol>
+	<li>
+		Find the directoy titled &#39;woocommerce-table-rate-shipping&#39; and upload it and all files within to the plugins directory of your WordPress install (/&lt;i&gt;WORDPRESS-DIRECTORY&lt;/i&gt;/wp-content/plugins/)</li>
+	<li>
+		From your WordPress dashboard, choose &#39;Installed Plugins&#39; under the &#39;Plugins&#39; category</li>
+	<li>
+		Locate the newly added plugin and click on the &#39;Activate&#39; link to enable its features.</li>
+</ol>
+</section>
+<section id="settings_table_rates">
+	<div class="page-header"><h3>Settings: Table Rates</h3><hr class="notop"></div>
+<p class="info">
+	The settings for Table Rate shipping can be found alongside the other shipping methods.<br>
+	<em>Dashboard: WooCommerce &gt; Settings &gt; Shipping &gt; Table Rate</em></p>
+<p>
+	<a href="assets/images/image_1.png" target="_blank"><img alt="" src="assets/images/image_1.png" style="height: 575px; width: 400px;"></a></p>
+<p>
+	<strong>Enable / Disable</strong> - This controls whether or not the plugin will be active on the current website. When the checkbox is marked, the plugin is enabled and active. Unmarking the checkbox will disable functionality but keep your settings saved.</p>
+<p>
+	<strong>Method Title</strong> - This is the text that will be refered to in your settings panel. It will NOT change the appearance of the shipping method title in the cart or checkout process.</p>
+<p>
+	<strong>Method Availability</strong> - Choose which countries should be using this plugin to calculate their shipping. <em>All Allowed Countries</em> will include all countries specified in the General WooCommerce settings. <em>Specific Countries</em> will produce a new box and allow you to choose the only countries capable of using table rate shipping. <em>Excluding selected countries</em> will also produce a new box below and include all countries listed in the General WooCommerce settings EXCEPT those listed in the box.</p>
+<p>
+	<strong>Condition </strong>- This options determines how the shipping price is calculated. There are two options:<em> Per Order</em> and <em>Per Item</em>. <em>Per order</em> will calculate a single price based on the total information of the cart. <em>Per Item</em> will calculate the shipping price for each item and sum them up at the end.</p>
+<p>
+	<strong>Free Shipping At</strong>- This options determines how the shipping price is calculated. There are two options:<em> Per Order</em> and <em>Per Item</em>. <em>Per order</em> will calculate a single price based on the total information of the cart. <em>Per Item</em> will calculate the shipping price for each item and sum them up at the end.</p>
+<p>
+	<strong>Free Shipping Label</strong>- If you choose to have a free shipping option, you may choose to give it a unique name with this setting. If free shipping is enabled and a label is not specified, the Method Title from above will be used in its place.</p>
+<p>
+	<strong>Add Free Shipping as Option </strong>- If selected (and if free shipping is enabled), when a customer qualifies for free shipping, free will be their only option. Otherwise, Free Shipping will be left an option atop of the customer&#39;s qualifying rates from the table you define below.</p>
+<p>
+	<strong>Include Tax</strong> - When this checkbox is marked, shipping costs will be calculate on the price of the items in the cart AFTER tax has been added. Leave unmarked to not include tax in your shipping cost.</p>
+<p>
+	<strong>Enable Volumetric Comparison</strong> - Some delivery companies such as UPS and DHL offer something called volumetric shipping. This is an optional feature for this plugin and requires that dimensions be set for all products. When this checkbox is marked, a volumetric weight is calculated for each item and compared to the item&#39;s actual weight. Whichever number is larger will carry on as the item&#39;s official weight.</p>
+<p>
+	<strong>Volumetric Divisor</strong> - Each delivery company that offers volumetric support uses a special number to calculate its volumetric weight. This number is generally based on the unit of measurement the dimensions are in. Please contact your delivery carrier to determine the number you should use here.</p>
+<p>
+	<strong>Single Class Only</strong> - This settings is only applicable when using the Per Class method. When enabled, if a customer is purchasing items from multiple shipping classes, only the one with the highest priority will return a rate. The items from the other classes will be ignored.</p>
+<p>
+	<strong>Handling / Base Rates</strong> - This table allows you to set fee(s) that will be added to the shipping price after it is calculated. If left blank, no handling fee will be added.</p>
+<p style="margin-left: 40px;">
+	<em>Zone</em> - Choose a specific zone for the given fee to be applied to.</p>
+<p style="margin-left: 40px;">
+	<em>Fee</em> - There are two options for types of fees: a fixed price or a percentage. You can choose either of these or both if desired. If included, the percentage will be calculated and added first. It takes the given percentage of the cart subtotal and adds the result to the shipping cost. If a fixed priced is listed, this will also be added to the shipping cost in the end.</p>
+<p>
+	<strong>Shipping Table Rate</strong> - This table may seem a little overwhelming so let&#39;s break it down to each column. Odds are you won&#39;t need to worry about much of it, but it has many possiblities if you are looking for a more complex system.</p>
+<p style="margin-left: 40px;">
+	<em>Title</em> - This is the text that will appear next to the shipping price in the cart and checkout sections.</p>
+<p style="margin-left: 40px;">
+	<em>Identifier</em> - This is the text that the rate will be identified with. It differentiates the different methods that could be available to the buyer. For example: Ground, Priority, and Next Day Air. Shipping rates with different identifiers will be added as different options for the customer to choose from. Shipping rates with the same identifier will be either added or overwritten depending on your method chosen.</p>
+<p style="margin-left: 40px;">
+	<em>Zone</em> - This is the first criteria the shipping method will check for. From here you will select the zone that this shipping method will apply to. Only customers in this region specified in the zone will have the possibility of choosing this shipping price. The drop down box is populated with all zones that are included in the Shipping Zones Settings tab.</p>
+<p style="margin-left: 40px;">
+	<em>Shipping Class</em> - If you would like to specify certain rules for different classes, this option will help and work differently depending on the condition you&#39;re using. <em>Per Order</em> will look to see if the user&#39;s cart contains an item of this class. Not all items must belong in this class, but at least one must in order for this shipping price to apply. If you have the <em>Per Item</em> condition, only items under that particular shipping class will have the potential of being assigned this shipping price. <em>Per class</em> works similar to <em>per item</em> except it groups products by their class, and the applied the shipping rate to the entire group if a match is found. If you wish to include all shipping classes, simply leave it as an asterisk (*).</p>
+<p style="margin-left: 40px;">
+	<em>Based On</em> - Select the comparison you wish to use for the next few options, <em>min </em>and <em>max</em>, of the table. There are four options: <em>Price</em>, <em>Weight</em>, <em>Item Count</em>, and <em>Dimensions.</em> If the customer&#39;s information has fit into the previous 3 conditions, this will be the final comparison.</p>
+<p style="margin-left: 40px;">
+	<em>Min</em> - This is the minimum value for this shipping rate. If you chose <em>Price</em> in the previous option, this will compare the minimum value to the price of the item or cart depending on the <em>Condition</em> set earlier. It must be equal to or higher than the <em>Min</em> value. The same rule applies for both weight and item count. Set this value to zero to include all values less than the maximum, set in the next option.</p>
+<p style="margin-left: 40px;">
+	<em>Max</em> - This is the maximum value for this shipping rate. If you chose to base the criteria on <em>Price</em>, this will compare the maximum value to the price of the item or cart depending on the <em>Condition</em> set earlier. It must be less than or equal to the <em>Max</em> value. The same rule applies for both weight and item count. Set this value to an asterisk (*) to include all values greater the the minimum, set in the previous option.</p>
+<p style="margin-left: 40px;">
+	<em>Cost</em> - This is the set price for shipping. If the customer&#39;s shipping information has matched all of the criteria set in this table row, this rate will be added to their shipping options. There are four options for setting a rate: fixed amount, percentage, multiplier, and deny. The fixed amount will be the shipping cost for this cart, item, or class depending on condition, but if percentage (%) is selected, then the shipping cost will be the percentage of the cart subtotal, item subtotal, or class subtotal again depending on which condition is chosen. The multiplier option (x) is for Per Order and Per Class conditions only. When selected, the shipping cost will be multiplied by the quantity either in the cart or in the class group depending on the condition you have chosen. Next is the weight unit (w) which multiples the shipping cost given by the weight of the items in the cart. Finally, the deny option (D) removes a previous shipping cost from the list of possible rates. This would be helpful if an order qualifies for another shipping rate, but maybe it contains an item that you don&#39;t support shipping to their country for. This feature could remove the rate if the customer&#39;s information matches.</p>
+<p style="margin-left: 40px;">
+	<em>Bundle</em> - This optional feature allows for you to change the price based on the quantity the customer is ordering. There are two fields: <em>Quantity</em> and <em>Cost</em> (respectively). If a quantity of more than 1 is specified, then the shipping cost supplied under the <em>Cost</em> column will be applied ONLY to items up until the quantity specified. Then all remaining items that qualify will be charged the second amount.</p>
+<p style="margin-left: 40px;">
+	<em>Default</em> - If you are supplying multiple options for a customer to choose from, you have the option to select one as the default option the customer will see. It is recommended that all options with the selected title be checked to ensure it works properly.</p>
+<p>
+	<strong>Shipping Class Priorities</strong> - The third table on this settings page will manage the shipping classes you currently have. It&#39;s primary use is for the <em>Per Order</em> method.</p>
+<p style="margin-left: 40px;">
+	<em>Shipping Class</em> - This text labels each shipping class previously set under Products &gt; Shipping Classes.</p>
+<p style="margin-left: 40px;">
+	<em>Priority</em> - The text boxes in this column are used for the <em>Per Order</em> condition. It sets which classes are of top priority, for example larger items would generally be a higher priority than smaller items. It will determine the size of the box needed to ship all items in the cart no matter how small the others are. Technically any whole number can be used here, but numbers small and close together are recommended. The higher the number the higher the priority, and respectfully the lower the number the lower the priority.</p>
+<p style="margin-left: 40px;">
+	<em>Exclude</em> - This checkbox works for all conditions. When checked, any item under the specified shipping class will not count towards the calculation. In other words, its shipping is free.</p>
+<p>
+	<strong>Set the Order Shipping Options Will Appear</strong> - This final table simply lists the titles from all of your specified rates. They can then be dragged and placed in your desired order. By default, WooCommerce adds the rates in the order they are received. For this plugin to work properly, you can&#39;t always place the rates in the order you would prefer. This table will allow you the chance to determine the order the shipping options appear on the cart and checkout pages when this plugin returns more than one.</p>
+</section>
+<section id="settings_zones">
+	<div class="page-header"><h3>Settings: Zones</h3><hr class="notop"></div>
+<p class="info">
+	The settings for Table Rate shipping can be found alongside the other shipping methods.<br>
+	<em>Dashboard: WooCommerce &gt; Settings &gt; Shipping Zones</em></p>
+<p>
+	<a href="assets/images/image_3.png" target="_blank"><img alt="" src="assets/images/image_3.png" style="width: 400px; height: 189px;"></a></p>
+<p>
+	<em>Click the Image Above to View the Full Screenshot</em></p>
+<p>
+	The main page will look very similar to other lists in your dashboard used to maintain the various post types you have. Each row will display information about each zone as described below.</p>
+<p>
+	<strong>Zone Title</strong> - This column will contain the title you assign to your zone as well as it&#39;s unique ID numbers and any description you gave to quickly summarize what area the zone covers.</p>
+<p>
+	<strong>Locations</strong> - All specific areas covered by the given zone will be listed here. This could be as simple as &#39;Everywhere&#39;, a specific country or countries, or a list of postal codes accepted.</p>
+<p>
+	<strong>Status</strong> - There will always appear a check mark in this column. If the check mark is purple, then the zone is enabled. If the check mark is gray, then the zone is disabled. To change between states, simply click on the check mark of the zone you wish to enable/disable. You will notice the mark change colors to signal that it was completed successfully.</p>
+<h4 id="settings_zones_re_ordering_zones">Re-Ordering Zones</h4>
+<p>
+	It&#39;s important to note that with the addition of zones you are now in control of their priority. This means you must change the order how you wish for rates to be overwritten. Generally this means beginning with &#39;Everywhere&#39;, the lowest priority, and ending with a specific set of post codes, highest priority. This plugin begins with zones top to bottom, comparing their values for the best match. By ordering it this way, a shipping zone will be assigned to &#39;Everywhere&#39; first, and then look to see if there is a specific country set that the customer is shipping to. If there is, this rate will override the previous one, if not, the user will keep &#39;Everywhere&#39; as their shipping zone.</p>
+<p>
+	To re-order the zones by priority, simply drag and drop each row until you have reached your desire order. Then click the blue &#39;Save Changes&#39; button below to store your priorities into the settings.</p>
+<h4 id="settings_zones_deleting_zones">Deleting Zones</h4>
+<p>
+	From this page you also have the option to delete zones one of two ways. If you&#39;re deleting a single zone, it is easiest to hover over the zone you wish to delete. A delete link will appear. Clicking this will then remove the zone from the list. To delete multiple zones at once, check the appropriate box for each zone to be deleted. Above and below the table is a select menu labeled &#39;Bulk Actions&#39;. Select the option to &#39;Delete&#39; and click the following button, &#39;Apply&#39;.</p>
+<h4 id="settings_zones_adding_editing_zones">Adding / Editing Zones</h4>
+<p class="info">
+	To Add a new zone, click the &#39;Add New&#39; link located next to the headline text &#39;Shipping Zones&#39; above the zone table. To edit an existing zone, hover your mouse over the zone you need to edit, and click the &#39;Edit&#39; link that appears. The forms for each of these, described below, are the same.</p>
+<p>
+	<a href="assets/images/image_4.png" target="_blank"><img alt="" src="assets/images/image_4.png"  ></a></p>
+<p>
+	<em>Click the Image Above to View the Full Screenshot</em></p>
+<p>
+	<strong>Enabled</strong> - This controls whether or not the zone will be active in the table rate settings. When the checkbox is marked, the zone is enabled and active. Unmarking the checkbox will disable the zone from being used but keep your settings saved.</p>
+<p>
+	<strong>Title</strong> - Give your zone a unique name. It will be used in the table rate list to identify which zone is which.</p>
+<p>
+	<strong>Description</strong> - This field is used for administrative purposes only. It will only appear in the general list of zones to provide a brief description if needed. This field is optional.</p>
+<p>
+	<strong>Type</strong> - There are three type of zones: Everywhere, Countries, and Postal Code. See next option for further explanation. &#39;Countries&#39; &#39;Postal Code&#39;</p>
+<p>
+	<strong>Locations</strong> - Depending on the option chosen previously, you may see one of three possible views.<br>
+	<em>Everywhere</em> includes all countries, states, and provinces as defined in the General WooCommerce settings. Therefore no futher settings will be available.<br>
+	<em>Countries / States</em> allows you to define a specific set of countries and/or states/provinces. A single box will be shown allowing you to select multiple locations in the same manner as other WooCommerce country settings.<br>
+	<em>Postal Code</em> allows you to choose a single country, state, or province and then list particular postal codes for that zone. Here you can list a specific postal code (i.e. 95348, L0B1B0, FY1 1PT) or use a wildcard asterisk (*) to give a range of postal codes without writing a long list (i.e. 953*, L0B*, FY*). If the postal code is completely numeric, and range operator (-) may be used (i.e. 24352-45123).</p>
+<p>
+	<strong>Except...</strong> - Under the&nbsp;<em>Locations</em> section you will also find one or two more fields that give the ability to not allow certain sections that would otherwise qualify for this zone. If you&#39;ve selected&nbsp;<em>Everywhere</em>, there will be a multiple country &amp; state select box. The countries chosen here would not qualify as part of &#39;Everywhere&#39;. If you&#39;ve chosen&nbsp;<em>Countries / States</em>, two fields are included for exclusion. The first is a multiple select list containing the states for various countries as defined by WooCommerce. The second is a box for postal codes. You can choose to use one or both of these options. The postal code text box will also appear if you have chosen the&nbsp;<em>Postal Code</em>&nbsp;type. All field types follow the same rules as the&nbsp;<em>Location</em> section, except for the exclusion in postal codes (^).</p>
+<p>
+	<strong>When all settings fields are complete, click the blue &#39;Save Changes&#39; button to submit your new or edited zone data.</strong></p>
+</section>
+<section id="quick_tips">
+	<div class="page-header"><h3>Quick Tips</h3><hr class="notop"></div>
+<ul>
+	<li>
+		An asterisk (*) is a wild card symbol and the equivalent of all or infinity. When used under a geopgraphic option or shipping class, it denotes that all locations or classes will be included. When used as the maximum price, it states that there is no actual maximum price for this order.<br>
+		&nbsp;</li>
+	<li>
+		Setting the &#39;min&#39; value to &#39;0&#39; and the &#39;max&#39; value to &#39;*&#39; means that this particular rate will not be judged on price, weight, or item count.<br>
+		&nbsp;</li>
+	<li>
+		If a customer qualifies for multiple rates in their area, each rate will be added to their shipping options. This is great when setting speed of delivery such as Ground or Express shipping.<br>
+		&nbsp;</li>
+	<li>
+		You may add as many rows to the table as needed. If you are setting multiple rates per customer depending on the country or state/province they live in, the table may grow rather big but it will still function efficiently.<br>
+		&nbsp;</li>
+	<li>
+		Identifiers for each shipping rate do NOT need to be unique, however only one rate for each name will be displayed. For example, if a customer is elidgible for &#39;Standard Shipping&#39; to the United States for $5.99, and also &#39;Standard Shipping&#39; to New York, United States for $3.99, only the $3.99 rate will be displayed. This is because New York is a more specific region than United States.<br>
+		&nbsp;</li>
+	<li>
+		You are in control of the order in which zones are calculated. Drag and drop the appropriate rows in your Shipping Zones table and click the blue &#39;Save Changes&#39; button when finished.<br>
+		&nbsp;</li>
+	<li>
+		Volumetric shipping is completely optional but supported by this plugin. It requires the appropriate divisor set by your shipping company, and the full dimensions for each product you are selling.<br>
+		&nbsp;</li>
+	<li>
+		The DENY option in the cost table removes a rate with the given identifier if it has already been set as a possible rate. Sometimes a shipping model may have a specified rate with one exception such as a certain shipping clause. Perhaps extra large items cannot be shipped overnight. If this is the case, you could set a rate based on cost, but have another row check if their cart has an extra large item. If it does, DENY would remove the overnight shipping option by simply matching the identifiers.<br>
+		&nbsp;</li>
+	<li>
+		Shipping costs can be based on dimensions. Because there is only a single Min and Max value, there can only be one value to compare it to. Therefor, dimensions are calculated as an area. In other words, dimensions are calculate Length x Width x Height. NOTE: If one of these is values is not set, it will be removed from the equation.<br>
+		&nbsp;</li>
+	<li>
+		If you need additional tips or support, please try the <a href="http://bolderelements.net/support/" target="_blank">support forum</a> to see if your question has already been asked by another user.</li>
+</ul>
+</section>
+<section id="sources_and_credits">
+	<div class="page-header"><h3>Sources and Credits</h3><hr class="notop"></div>
+<p>
+	I&#39;ve used the following resoures to create this plugin.</p>
+<ul>
+	<li>
+		<a href="http://wcdocs.woothemes.com/apidocs/index.html">WooCommerce Source Code</a></li>
+	<li>
+		<a href="http://woothemes.com/woocommerce/">WooCommerce</a> plugin and dummy data</li>
+</ul>
+<p>
+	Once again, thank you so much for purchasing this plugin. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this plugin. No guarantees, but I&#39;ll do my best to assist. If you have a more general question relating to the plugins on CodeCanyon, you might consider visiting the forums and asking your question in the &quot;Item Discussion&quot; section.</p>
+</section>
+
+	</div>
+</body>
+</html>
